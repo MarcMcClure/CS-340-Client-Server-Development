@@ -1,7 +1,7 @@
 # CS-340-Client-Server-Development
 
 ### About the Project ###
-This project provides an interface to search for candidate search-and-rescue dogs in the Austin, Texas area by pulling from a local version of the Austin Animal Center database.
+This project provides an interface to search for candidate search-and-rescue dogs in the Austin, Texas area by pulling from a local version of the Austin Animal Center database. With minor modifications AAC_CRUD.py could be used as a generalized CRUD module but it is currently set up to interface with this databse and this databse only.
 
 ### Motivation ###
 This is a Global Rain project commissioned by Grazioso Salvare international rescue-animal training company.
