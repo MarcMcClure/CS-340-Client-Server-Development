@@ -7,7 +7,7 @@ This project offers an interface for searching candidate search-and-rescue dogs 
 This is a Global Rain project commissioned by Grazioso Salvare international rescue-animal training company.
 
 ### Getting Started ###
-These instructions will be for getting this project to run on Linux. To get this project working you will need the MongoDB, Python, The pymongo library, Jupyter Notebook, the CRUD module itself AAC_CRUD.py, the Jupyter Notebook project for testing the CRUD module AAC_CRUD_Tester.ipynb, and the Jupyter Notebook project containing the interface AAC_Database_Interface. First install MongoDB and Jupyter Notebook via Anaconda with the included python distribution from the websites listed below. Next install pymongo running the command “pip install pymongo” in the shell. Import the dataset with mongoimport and set up user and admin accounts in MongoDB from the shell. Screenshots for these three actions are included below. To test the module, then open the Jupyter Notebook project AAC_CRUD_Tester.ipynb in Jupyter Notebook and run the testing cells. Screen shots of the tests being passed is also included below. To run the database interface open the Jupyter Notebook project AAC_Database_Interface. Ipynb in Jupyter Notebook and run the cell.
+These instructions will be for getting this project to run on Linux. To get this project working you will need the MongoDB, Python, The pymongo library, Jupyter Notebook, the CRUD module itself AAC_CRUD.py, the Jupyter Notebook project for testing the CRUD module AAC_CRUD_Tester.ipynb, and the Jupyter Notebook project containing the interface AAC_Database_Interface. First install MongoDB and Jupyter Notebook via Anaconda with the included python distribution from the websites listed below. Next install pymongo running the command “pip install pymongo” in the shell. Import the dataset with mongoimport and set up user and admin accounts in MongoDB from the shell. Screenshots for these three actions are included below. To test the module, then open the Jupyter Notebook project AAC_CRUD_Tester.ipynb in Jupyter Notebook and run the testing cells. Screen shots of the tests being passed is also included below. To run the database interface open the Jupyter Notebook project AAC_Database_Interface.ipynb in Jupyter Notebook and run the cell.
 
 ### Installation ###
   *	MongoDB
@@ -40,12 +40,12 @@ The videos in this repository demonstrate the capabilities of the Database inter
     *	Selecting columns to show on the pie chart including multi column selection. A pie Chart was used here to give a general sense of the demographic information of animals across categories. This works best for categories where there is often repeated information like Animal Type, Outcome Type, Breed, Color, Age Upon Outcome, etc. This chart works less well for categories where there is seldom repeated information like Date of Birth. 
 
 ### Code Example ###
-This section discuses the usage of the AAC CRUD module
-This library runs the animal shelter database. First the database must be initialized like this.
+This section discusses the usage of the AAC CRUD module
+This library runs the animal shelter database. First, initialize the database as follows:
 		
     animalShelter = AnimalShelter(username, password)	
 
-Entries can be created by using a list of dictionaries or a dictionary like this.
+Entries can be created by using a list of dictionaries or a dictionary with:
 		
     animalShelter.create({"name": "Moe", "age": 8})
 
@@ -53,20 +53,20 @@ or
 
     animalShelter.create([{"name": "Curly", "age": 6}, {"name": "Larry", "age": 7}])
 
-Entries can be read by using queries formatted in the same way as the find function in MongoDB as documented here. The read function will return a cursor pointing to the first entry in the list. A simple example of this would be this.
+Entries can be read by using queries formatted in the same way as the find function in MongoDB as documented here. The read function will return a cursor pointing to the first entry in the list. The following is a simple example.
 		
     animalShelter.read({"name": "Moe"})
 
-this would return a curser that was pointing to the first element in a list of all the entries with the value “Moe” in the key “name”
+This would return a cursor that was pointing to the first element in a list of all the entries with the value “Moe” in the key “name”
 		
-Entries can be Deleted using the same query formatting as the read function. A simple example of this would be this.
+Entries can be deleted using the same query formatting as the read function. A simple example of this would be this.
 		
     animalShelter.delete({"name": "Moe"})
 
 This would delete all entries with the value “Moe” in the key “name”.
 
 ### Tests ###
-There are 3 blocks of code for testing the python module. They can be run by clicking on each block and pressing the run button or pressing SHIFT + ENTER. Screenshots of these tests being passed are included below.
+There are 3 blocks of code for testing the python module. They can be run by clicking on each block and pressing the run button or pressing SHIFT + ENTER. Screenshots of successful test executions are included below.
 
 ### Screenshots ###
 Importing the dataset into MongoDB.
