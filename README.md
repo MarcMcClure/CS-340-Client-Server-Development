@@ -82,4 +82,4 @@ Jupyter Notebook tests being passed.
 ![image](https://user-images.githubusercontent.com/76132117/235260698-5d582c7b-acb4-4bd8-a1f5-b4095b8941f9.png)
 
 Contact
-Marc McClure: mmxman123@gmail.com
+Marc McClure: mcm5756@gmail.com
